@@ -13,4 +13,4 @@ class Employee(models.Model):
     employeeName = models.CharField(max_length=200)
     dateOfJoining = models.DateField(default=datetime.now,blank=True)
     departmentName = models.CharField(max_length=200)
-    photoFileUrl = models.FileField(upload_to='image')
+    photoFileUrl = models.CharField(max_length=500)
